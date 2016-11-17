@@ -16,7 +16,8 @@ App.onLaunch = function(options) {
     const helperScriptURLs = [
         "DocumentLoader",
         "DocumentController",
-        "ListController"
+        "ListController",
+        "SearchController",
     ].map(
         moduleName => `${baseURL}js/${moduleName}.js`
     );

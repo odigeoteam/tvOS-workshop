@@ -22,9 +22,35 @@
             .imgGradient {
             tv-tint-color: linear-gradient(top, 0.32, transparent, 0.45, rgba(0,51,203,0.7), 0.96, rgba(0,51,203,1.0), rgba(0,51,203,1.0));
             }
+            .buttonBadgeImg {
+            tv-tint-color: rgba(255, 255, 255, 1.0);
+            }
+            .rightElement {
+            tv-position: right;
+            }
+            .leftElement {
+            tv-position: left;
+            margin: 0 100 0 0;
+            }
+            .headerTitle {
+            tv-position: center;
+            }
         </style>
     </head>
     <stackTemplate id="collectionList">
+        <banner>
+            <row>
+                <organizer>
+                    <img src="/resources/images/icons/logo.png" class="rightElement" width="260" height="62" />
+                    <header>
+                        <title id="headerTitle" style="headerTitle"></title>
+                    </header>
+                    <buttonLockup searchDocumentURL="/templates/Search.xml" class="leftElement">
+                        <badge class="buttonBadgeImg" src="/resources/images/icons/search.png" width="50" height="50" />
+                    </buttonLockup>
+                </organizer>
+            </row>
+        </banner>
         <collectionList>
             <shelf class="3ColumnGrid">
                 <header>

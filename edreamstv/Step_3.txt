@@ -1,0 +1,15 @@
+------------------------------------------------------------------------------
+------------                                                     -------------
+------------                        STEP 3                       -------------
+------------                                                     -------------
+------------------------------------------------------------------------------
+
+En el Step tres:
+    En el HomeViewController, dentro del método showSearch(_ sender: AnyObject), haremos un present del controlador devuelto por el método packagedSearchController()
+
+    También añadiremos un UITapGestureRecognizer para cuando se pulse el botón de play se presente la búsqueda.
+
+    En el SearchViewController, podemos probar a cambiar el color de fondo de la vista del controlador cuando el userInterfaceStyle cambia. Para esto, prueba con la siguiente combinanción de teclas cmd+shift+D.
+    El método que tienes que implementar es este traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?).
+
+    También podemos implementar didUpdateFocus(in context: UIFocusUpdateContext, with coordinator: UIFocusAnimationCoordinator) para que si el elemento que tiene el foco es una UICollectionViewCell se vea la imagen de fondo y cuando es distinto que no se vea.

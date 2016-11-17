@@ -1,0 +1,16 @@
+------------------------------------------------------------------------------
+------------                                                     -------------
+------------                        STEP 3                       -------------
+------------                                                     -------------
+------------------------------------------------------------------------------
+
+¡¡POR FIN ALGO DE JS!!
+
+
+El objetivo de este step es setear el título del header del List.xml con el
+título del elemento que tenga el foco. Para ello escucharemos al evento
+"highlight" del template.
+
+También queremos que cuando el usuario pulse el botón de play estando en el
+listado, le aparezca la pantalla de búsqueda. El evento en ese caso es...
+"play" :)

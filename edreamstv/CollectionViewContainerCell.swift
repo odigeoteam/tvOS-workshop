@@ -50,4 +50,13 @@ extension CollectionViewContainerCell: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         delegate?.didSelect(items[indexPath.row])
     }
+    
+    func collectionView(_ collectionView: UICollectionView, canFocusItemAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didUpdateFocusIn context: UICollectionViewFocusUpdateContext, with coordinator: UIFocusAnimationCoordinator) {
+        guard let indexPath = context.nextFocusedIndexPath else { return }
+        delegate?.didUpdateFocusIn(items[indexPath.row])
+    }
 }

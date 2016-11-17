@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<document>
+    <head>
+        <style>
+            .3ColumnGrid {
+            tv-interitem-spacing: 48;
+            }
+            .gradientOverlayTitle {
+            tv-text-max-lines: 1;
+            tv-text-style: body;
+            padding: 30;
+            text-align: left;
+            color: rgba(255, 255, 255, 1.0);
+            }
+            .gradientOverlaySubtitle {
+            color: rgba(255, 255, 255, 0.6);
+            tv-text-style: caption2;
+            tv-text-max-lines: 1;
+            margin: 6 0 -6 0;
+            text-align: left;
+            }
+            .imgGradient {
+            tv-tint-color: linear-gradient(top, 0.32, transparent, 0.45, rgba(0,51,203,0.7), 0.96, rgba(0,51,203,1.0), rgba(0,51,203,1.0));
+            }
+        </style>
+    </head>
+    <searchTemplate>
+        <searchField/>
+        <text id="message">Message Text</text>
+        
+        <collectionList id="resultsContainer">
+        </collectionList>
+    </searchTemplate>
+</document>

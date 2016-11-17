@@ -91,14 +91,15 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="82T-Y4-lkY">
-                        <barButtonItem key="leftBarButtonItem" image="search_icon" id="qZ5-Kc-nNP">
+                        <barButtonItem key="leftBarButtonItem" image="search_icon" id="c5c-uj-WQI">
                             <connections>
-                                <action selector="showSearch:" destination="BYZ-38-t0r" id="Qe2-28-vQl"/>
+                                <action selector="showSearch:" destination="BYZ-38-t0r" id="adU-iq-oTy"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="imageBackgroundView" destination="Vv8-FF-GwQ" id="Dgw-0Q-GIQ"/>
+                        <outlet property="tableView" destination="KYD-uT-Y3m" id="SzJ-7H-x5y"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

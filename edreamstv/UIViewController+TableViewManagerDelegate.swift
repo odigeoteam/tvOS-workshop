@@ -17,7 +17,12 @@ extension TableViewManagerDelegate where Self: UIViewController {
     }
     
     func didUpdateFocusIn(_ travelItem: TravelItem) {
-        
-        //TODO: Step 2
+        guard let controller = self as? ImageBackgroundView else { return }
+        let transition = CATransition()
+        transition.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
+        transition.duration = 0.4
+        transition.type = kCATransitionFade
+        controller.imageBackgroundView.layer.add(transition, forKey: "Transition")
+        controller.imageBackgroundView.image = UIImage(named: travelItem.backgroundImageName)
     }
 }
