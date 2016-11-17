@@ -1,0 +1,17 @@
+------------------------------------------------------------------------------
+------------                                                     -------------
+------------                        STEP 4                       -------------
+------------                                                     -------------
+------------------------------------------------------------------------------
+
+Para el Step 4 añadiremos lo siguiente:
+    En el  UIViewController+TableViewManagerDelegate, completaremos el método didSelect(_ travelItem: TravelItem).
+    Para ello crearemos un PageWithCustomIndicatorViewController con transition style scroll y navigation orientation vertical.
+    A este controlador le asignaremos a su propiedad item el travelItem que recibimos y a su propiedad items el resultado de llamar a travelItem.detailItems().
+    Por último, haremos el push del controlador.
+
+    Ahora que se ve como es el detalle, vamos a cargar un video. Para ello abrimos el controlador DetailVideoViewController y le cambiamos la clase padre a AVPlayerViewController.
+    En el viewDidLoad, nos crearemos un AVPlayer con la propiedad url que tenemos en el controlador y este AVPlayer lo asignaremos a la propiedad player.
+    Configuraremos algunos aspectos como requiresLinearPlayback a true y videoGravity a AVLayerVideoGravityResizeAspectFill. Y para terminar le diremos al player?.play().
+
+    Para acabar, en el PageWithCustomIndicatorViewController, añadiremos un UITapGestureRecognizer que cuando pulsemos la tecla select llame al método showDetailText(_ sender: AnyObject). Completaremos este método haciendo un present del resultado de detailTextViewController().

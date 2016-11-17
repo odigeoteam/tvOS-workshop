@@ -13,11 +13,28 @@ class AppDelegate: UIResponder, UIApplicationDelegate, TVApplicationControllerDe
     
     var window: UIWindow?
     var appController: TVApplicationController?
-        
+    
+    var extendedInterfaceCreator = ExtendedInterfaceCreator()
+    
+    // MARK: Javascript Execution Helper
+    
+    func executeRemoteMethod(_ methodName: String, completion: @escaping (Bool) -> Void) {
+        appController?.evaluate(inJavaScriptContext: { (context: JSContext) in
+            let appObject : JSValue = context.objectForKeyedSubscript("App")
+            
+            if appObject.hasProperty(methodName) {
+                appObject.invokeMethod(methodName, withArguments: [])
+            }
+            }, completion: completion)
+    }
+    
     // MARK: UIApplicationDelegate
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        TVElementFactory.registerViewElementClass(TVViewElement.self, elementName: "customDetailTemplate")
+        TVInterfaceFactory.shared().extendedInterfaceCreator = extendedInterfaceCreator
         
         window = UIWindow(frame: UIScreen.main.bounds)
         

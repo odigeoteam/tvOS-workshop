@@ -1,0 +1,34 @@
+------------------------------------------------------------------------------
+------------                                                     -------------
+------------                        STEP 4                       -------------
+------------                                                     -------------
+------------------------------------------------------------------------------
+
+Para finalizar nuestro querido workshop vamos a hacer tres pequeñas tareas.
+
+1 -. En el listado, en vez de usar la imagen de la lupa descargada de internet,
+queremos usar la que tenemos dentro del proyecto. Para ello tendrás que
+implementar uno de los métodos del protocolo TVInterfaceCreating.
+
+2 -. Queremos enviar un evento desde Swift a TVJS, concretamente cuando
+detectemos que la app viene de background a foreground (applicationWillEnterForeground...)
+Para enviar el mensaje usaremos el método "executeRemoteMethod" que está en el
+AppDelegate. El javascript que reciba el evento, mostrará una alerta con un
+mensaje.
+
+3 -. Ahora es el momento de lo contrario: enviar un mensaje desde TVJS a Swift.
+Para ello tenemos que crear un protocolo en objc que implemente el protocol
+JSExport (que está vacío), ahí dentro pondremos el método que queramos (le
+podemos poner parámetros). A continuación crearemos una clase que extienda de
+NSObject y que implemente el protocolo que creamos antes. Lo último que nos
+queda es crear una instancia de nuestro objeto y setearlo en el contexto de JS,
+para ello necesitaremos implementar el método appController(appController, evaluateAppJavaScriptInjsContext)
+Haciendo esto tendremos siempre disponible en el JS la instancia del objeto
+bajo el nombre que le hemos dado en el último método. Lo que queda es llamar
+al método cuando queramos, por ejemplo cuando cambiamos el foco en el listado.
+
+
+
+BONUS-. Crea tu propio template! Tomando como referencia el template que hemos
+creado, haz lo propio pero esta vez para la búsqueda. No olvides registrar
+la vista en el TVElementFactory!

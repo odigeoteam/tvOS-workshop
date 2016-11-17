@@ -31,7 +31,7 @@ class HomeViewController: UIViewController, ImageBackgroundView {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        //TODO: Step 3
+        addPlayPauseTap()
         navigationItem.rightBarButtonItem = UIBarButtonItem(customView: UIImageView(image: UIImage(named: "eDreams_logo_main")))
     }
 
@@ -41,7 +41,7 @@ class HomeViewController: UIViewController, ImageBackgroundView {
     }
 
     @IBAction func showSearch(_ sender: AnyObject) {
-        //TODO: Step 3
+        present(packagedSearchController(), animated: true, completion: nil)
     }
 
     //MARK: Private methods
@@ -49,6 +49,12 @@ class HomeViewController: UIViewController, ImageBackgroundView {
         let searchContainer = UISearchContainerViewController(searchController: SearchViewController())
         let searchNavigationController = UINavigationController(rootViewController: searchContainer)
         return searchNavigationController
+    }
+    
+    private func addPlayPauseTap() {
+        let playPauseTap = UITapGestureRecognizer(target: self, action: #selector(self.showSearch(_:)))
+        playPauseTap.allowedPressTypes = [ NSNumber(value: UIPressType.playPause.rawValue) ]
+        view.addGestureRecognizer(playPauseTap)
     }
 }
 

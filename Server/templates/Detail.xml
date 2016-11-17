@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<document>
+  <customDetailTemplate>
+    <video src="/resources/video/awakening.mp4" />
+    <carousel>
+      <img src="/resources/images/categories/movie/movie_2/movie_2_1.jpg"/>
+      <img src="/resources/images/categories/movie/movie_2/movie_2_2.jpg"/>
+      <img src="/resources/images/categories/movie/movie_2/movie_2_3.jpg"/>
+      <img src="/resources/images/categories/movie/movie_2/movie_2_4.jpg"/>
+      <img src="/resources/images/categories/movie/movie_2/movie_2_5.jpg"/>
+      <img src="/resources/images/categories/movie/movie_2/movie_2_6.jpg"/>
+    </carousel>
+  </customDetailTemplate>
+</document>

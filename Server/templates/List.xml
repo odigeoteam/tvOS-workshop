@@ -57,35 +57,35 @@
                     <title>movie destinations</title>
                 </header>
                 <section>
-                    <lockup>
+                    <lockup documentURL="/templates/Detail.xml" >
                         <img class="imgGradient" src="/resources/images/categories/movie/movie_1.jpg" width="548" height="250" />
                         <overlay>
                             <title class="gradientOverlayTitle">San Francisco</title>
                             <subtitle class="gradientOverlaySubtitle">La Roca</subtitle>
                         </overlay>
                     </lockup>
-                    <lockup>
+                    <lockup documentURL="/templates/Detail.xml" >
                         <img class="imgGradient" src="/resources/images/categories/movie/movie_2.jpg" width="548" height="250" />
                         <overlay>
                             <title class="gradientOverlayTitle">New Zealand</title>
                             <subtitle class="gradientOverlaySubtitle">The Lord of the Rings</subtitle>
                         </overlay>
                     </lockup>
-                    <lockup>
+                    <lockup documentURL="/templates/Detail.xml" >
                         <img class="imgGradient" src="/resources/images/categories/movie/movie_3.jpg" width="548" height="250" />
                         <overlay>
                             <title class="gradientOverlayTitle">Paris</title>
                             <subtitle class="gradientOverlaySubtitle">Midnight in Paris</subtitle>
                         </overlay>
                     </lockup>
-                    <lockup>
+                    <lockup documentURL="/templates/Detail.xml" >
                         <img class="imgGradient" src="/resources/images/categories/movie/movie_4.jpg" width="548" height="250" />
                         <overlay>
                             <title class="gradientOverlayTitle">New York City</title>
                             <subtitle class="gradientOverlaySubtitle">The dark knight rises</subtitle>
                         </overlay>
                     </lockup>
-                    <lockup>
+                    <lockup documentURL="/templates/Detail.xml" >
                         <img class="imgGradient" src="/resources/images/categories/movie/movie_5.jpg" width="548" height="250" />
                         <overlay>
                             <title class="gradientOverlayTitle">Chicago</title>
@@ -99,35 +99,35 @@
                     <title>hungry for travel</title>
                 </header>
                 <section>
-                    <lockup>
+                    <lockup documentURL="/templates/Detail.xml" >
                         <img class="imgGradient" src="/resources/images/categories/hungry/hungry_1.jpg" width="548" height="250" />
                         <overlay>
                             <title class="gradientOverlayTitle">Naples</title>
                             <subtitle class="gradientOverlaySubtitle">Discover the origins of the pizza</subtitle>
                         </overlay>
                     </lockup>
-                    <lockup>
+                    <lockup documentURL="/templates/Detail.xml" >
                         <img class="imgGradient" src="/resources/images/categories/hungry/hungry_2.jpg" width="548" height="250" />
                         <overlay>
                             <title class="gradientOverlayTitle">Tokyo</title>
                             <subtitle class="gradientOverlaySubtitle">The mistery of Sushi</subtitle>
                         </overlay>
                     </lockup>
-                    <lockup>
+                    <lockup documentURL="/templates/Detail.xml" >
                         <img class="imgGradient" src="/resources/images/categories/hungry/hungry_3.jpg" width="548" height="250" />
                         <overlay>
                             <title class="gradientOverlayTitle">New York City</title>
                             <subtitle class="gradientOverlaySubtitle">The Burguer temple</subtitle>
                         </overlay>
                     </lockup>
-                    <lockup>
+                    <lockup documentURL="/templates/Detail.xml" >
                         <img class="imgGradient" src="/resources/images/categories/hungry/hungry_4.jpg" width="548" height="250" />
                         <overlay>
                             <title class="gradientOverlayTitle">Malaga</title>
                             <subtitle class="gradientOverlaySubtitle">Tasty grilled fish</subtitle>
                         </overlay>
                     </lockup>
-                    <lockup>
+                    <lockup documentURL="/templates/Detail.xml" >
                         <img class="imgGradient" src="/resources/images/categories/hungry/hungry_5.jpg" width="548" height="250" />
                         <overlay>
                             <title class="gradientOverlayTitle">Mexico</title>
@@ -141,35 +141,35 @@
                     <title>once upon a time</title>
                 </header>
                 <section>
-                    <lockup>
+                    <lockup documentURL="/templates/Detail.xml" >
                         <img class="imgGradient" src="/resources/images/categories/once/once_1.jpg" width="548" height="250" />
                         <overlay>
                             <title class="gradientOverlayTitle">Rome</title>
                             <subtitle class="gradientOverlaySubtitle">All roads lead to Rome</subtitle>
                         </overlay>
                     </lockup>
-                    <lockup>
+                    <lockup documentURL="/templates/Detail.xml" >
                         <img class="imgGradient" src="/resources/images/categories/once/once_2.jpg" width="548" height="250" />
                         <overlay>
                             <title class="gradientOverlayTitle">Egypt</title>
                             <subtitle class="gradientOverlaySubtitle">The cradle of civilization</subtitle>
                         </overlay>
                     </lockup>
-                    <lockup>
+                    <lockup documentURL="/templates/Detail.xml" >
                         <img class="imgGradient" src="/resources/images/categories/once/once_3.jpg" width="548" height="250" />
                         <overlay>
                             <title class="gradientOverlayTitle">Cambodia</title>
                             <subtitle class="gradientOverlaySubtitle">Kingdom of Wonder</subtitle>
                         </overlay>
                     </lockup>
-                    <lockup>
+                    <lockup documentURL="/templates/Detail.xml" >
                         <img class="imgGradient" src="/resources/images/categories/once/once_4.jpg" width="548" height="250" />
                         <overlay>
                             <title class="gradientOverlayTitle">China</title>
                             <subtitle class="gradientOverlaySubtitle">The Great Wall</subtitle>
                         </overlay>
                     </lockup>
-                    <lockup>
+                    <lockup documentURL="/templates/Detail.xml" >
                         <img class="imgGradient" src="/resources/images/categories/once/once_5.jpg" width="548" height="250" />
                         <overlay>
                             <title class="gradientOverlayTitle">Mexico</title>
