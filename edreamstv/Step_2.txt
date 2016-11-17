@@ -1,0 +1,20 @@
+------------------------------------------------------------------------------
+------------                                                     -------------
+------------                        STEP 2                       -------------
+------------                                                     -------------
+------------------------------------------------------------------------------
+
+En este segundo step realizaremos los siguientes pasos:
+    Conectaremos la tabla del del HomeViewController y comprobamos que salen todos los items pero no sabemos donde está el foco.
+
+    En la clase CollectionViewContainerCell implementaremos los métodos
+        collectionView(_ collectionView: UICollectionView, canFocusItemAt indexPath: IndexPath) -> Bool
+        collectionView(_ collectionView: UICollectionView, didUpdateFocusIn context: UICollectionViewFocusUpdateContext, with coordinator: UIFocusAnimationCoordinator)
+    del UICollectionViewDelegate. En el último método notificaremos al delegate que item tiene el foco.
+
+    En TravelItemCollectionViewCell, en el imageView pondremos la propiedad adjustsImageWhenAncestorFocused a true.
+    Implementaremos el método didUpdateFocus(in context: UIFocusUpdateContext, with coordinator: UIFocusAnimationCoordinator) para corregir el tamaño de los elementos que no son focusables.
+    También añadiremos los motions effects a la bottom view.
+
+    Por último, implementaremos en UIViewController+TableViewManagerDelegate el método didUpdateFocusIn(_ travelItem: TravelItem) para cambiar la imagen de fondo.
+    Podemos usar guard let controller = self as? ImageBackgroundView else { return } para saber si el view controller tiene una imageView de fondo.

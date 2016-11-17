@@ -1,0 +1,99 @@
+{
+  "categories" : [{
+    "name" : "movie destinations",
+    "destinations" : [{
+      "name" : "San Francisco",
+      "description" : "La Roca",
+      "image" : "/resources/images/categories/movie/movie_1.jpg",
+      "background" : "/resources/images/categories/movie/movie_1.jpg"
+      },
+      {
+      "name" : "New Zealand",
+      "description" : "The Lord of the Rings",
+      "image" : "/resources/images/categories/movie/movie_2.jpg",
+      "background" : "/resources/images/categories/movie/movie_2.jpg"
+      },
+      {
+      "name" : "Paris",
+      "description" : "Midnight in Paris",
+      "image" : "/resources/images/categories/movie/movie_3.jpg",
+      "background" : "/resources/images/categories/movie/movie_3.jpg"
+      },
+      {
+      "name" : "New York City",
+      "description" : "The dark knight rises",
+      "image" : "/resources/images/categories/movie/movie_4.jpg",
+      "background" : "/resources/images/categories/movie/movie_4.jpg"
+      },
+      {
+      "name" : "Chicago",
+      "description" : "Watchmen",
+      "image" : "/resources/images/categories/movie/movie_5.jpg",
+      "background" : "/resources/images/categories/movie/movie_5.jpg"
+      }]
+    },{
+    "name" : "hungry for travel",
+    "destinations" : [{
+      "name" : "Naples",
+      "description" : "Discover the origins of the pizza",
+      "image" : "/resources/images/categories/hungry/hungry_1.jpg",
+      "background" : "/resources/images/categories/hungry/hungry_1.jpg"
+      },
+      {
+      "name" : "Tokyo",
+      "description" : "The mistery of Sushi",
+      "image" : "/resources/images/categories/hungry/hungry_2.jpg",
+      "background" : "/resources/images/categories/hungry/hungry_2.jpg"
+      },
+      {
+      "name" : "New York City",
+      "description" : "The Burguer Temple",
+      "image" : "/resources/images/categories/hungry/hungry_3.jpg",
+      "background" : "/resources/images/categories/hungry/hungry_3.jpg"
+      },
+      {
+      "name" : "Malaga",
+      "description" : "Tasty grilled fish",
+      "image" : "/resources/images/categories/hungry/hungry_4.jpg",
+      "background" : "/resources/images/categories/hungry/hungry_4.jpg"
+      },
+      {
+      "name" : "Mexico",
+      "description" : "Tacos",
+      "image" : "/resources/images/categories/hungry/hungry_5.jpg",
+      "background" : "/resources/images/categories/hungry/hungry_5.jpg"
+      }]
+    },{
+    "name" : "once upon a time",
+    "destinations" : [{
+      "name" : "Rome",
+      "description" : "All roads lead to Rome",
+      "image" : "/resources/images/categories/once/once_1.jpg",
+      "background" : "/resources/images/categories/once/once_1.jpg"
+      },
+      {
+      "name" : "Egypt",
+      "description" : "The cradle of civilization",
+      "image" : "/resources/images/categories/once/once_2.jpg",
+      "background" : "/resources/images/categories/once/once_2.jpg"
+      },
+      {
+      "name" : "Cambodia",
+      "description" : "Kingdom of Wonder",
+      "image" : "/resources/images/categories/once/once_3.jpg",
+      "background" : "/resources/images/categories/once/once_3.jpg"
+      },
+      {
+      "name" : "China",
+      "description" : "The Great Wall",
+      "image" : "/resources/images/categories/once/once_4.jpg",
+      "background" : "/resources/images/categories/once/once_4.jpg"
+      },
+      {
+      "name" : "Mexico",
+      "description" : "Amazing Temples",
+      "image" : "/resources/images/categories/once/once_5.jpg",
+      "background" : "/resources/images/categories/once/once_5.jpg"
+      }]
+    }]
+}

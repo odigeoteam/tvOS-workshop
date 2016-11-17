@@ -1,0 +1,14 @@
+------------------------------------------------------------------------------
+------------                                                     -------------
+------------                        STEP 2                       -------------
+------------                                                     -------------
+------------------------------------------------------------------------------
+
+Como ya somos expertos en TVML vamos a modificar el template que tenemos para
+el listado.
+
+Vamos a añadir una cabecera que contenga lo siguiente:
+
+*  A la izquierda un botón con el icono de la lupa ("search.png")
+*  En el centro un texto
+*  A la derecha una imagen, que será nuestro logo ("logo.png")

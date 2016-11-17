@@ -8,7 +8,7 @@
 import Foundation
 
 extension TravelItem {
-
+    
     static var sampleItems: [TravelItem] = {
         return [
             TravelItem(group: .movie, number: 1, slides: 0, title:"San Francisco", subTitle:"LA ROCA"),
@@ -28,7 +28,7 @@ extension TravelItem {
             TravelItem(group: .once, number: 3, slides: 0, title:"Cambodia", subTitle:"Kingdom of Wonder"),
             TravelItem(group: .once, number: 4, slides: 0, title:"China", subTitle:"The Great Wall"),
             TravelItem(group: .once, number: 5, slides: 0, title:"Mexico", subTitle:"Amazing Temples"),
-        ]
+            ]
     }()
 }
 
