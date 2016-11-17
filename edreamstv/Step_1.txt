@@ -1,2 +1,8 @@
+------------------------------------------------------------------------------
+------------                                                     -------------
+------------                        STEP 1                       -------------
+------------                                                     -------------
+------------------------------------------------------------------------------
+
 En este primer step añadiremos el left bar button item en el navigation item.
 Utilizaremos la imagen search_icon y lo conectaremos al selector showSearch:

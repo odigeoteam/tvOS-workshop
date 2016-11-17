@@ -48,6 +48,11 @@ App.onLaunch = function(options) {
     });
 };
 
+App.onWillEnterForeground = function(params) {
+    const alertDocument = createAlertDocument('Hola', 'Sé que has vuelto de background... piensa sobre ello');
+    navigationDocument.pushDocument(alertDocument);
+};
+
 /**
  * Convenience function to create a TVML loading document with a specified title.
  */

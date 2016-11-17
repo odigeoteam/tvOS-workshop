@@ -42,7 +42,9 @@
             if (titleTriggerElementArray.length > 0) {
                 const titleTriggerElement = titleTriggerElementArray.item(0);
                 const headerTitle = stackTemplateElement.getElementById("headerTitle");
-                headerTitle.textContent = titleTriggerElement.textContent;                
+                headerTitle.textContent = titleTriggerElement.textContent;
+                
+                bridge.wannaTravelToDestination(titleTriggerElement.textContent);
             }
         }        
     }

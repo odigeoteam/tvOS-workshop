@@ -1,3 +1,9 @@
+------------------------------------------------------------------------------
+------------                                                     -------------
+------------                        STEP 2                       -------------
+------------                                                     -------------
+------------------------------------------------------------------------------
+
 En este segundo step realizaremos los siguientes pasos:
     Conectaremos la tabla del del HomeViewController y comprobamos que salen todos los items pero no sabemos donde está el foco.
 

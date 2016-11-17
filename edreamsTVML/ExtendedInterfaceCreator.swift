@@ -33,7 +33,11 @@ extension ExtendedInterfaceCreator: TVInterfaceCreating {
             return nil
         }
     }
-        
+    
+    func resourceImage(name resourceName: String) -> UIImage? {
+        return UIImage(named: resourceName)
+    }
+    
     fileprivate func configureCustomDetailViewController(_ element: TVViewElement, detailViewController: PageWithCustomIndicatorViewController) {
         
         guard let children = element.children else { return }

@@ -24,7 +24,7 @@ class PageWithCustomIndicatorViewController: CustomPageViewController {
         
         addLogoImageView()
         addPageIndicatorView()
-        //TODO: Step 4
+        addSelectTap()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -42,7 +42,7 @@ class PageWithCustomIndicatorViewController: CustomPageViewController {
     }
     
     @IBAction func showDetailText(_ sender: AnyObject) {
-        //TODO: Step 4
+        present(detailTextViewController(), animated: true, completion: nil)
     }
     
     //MARK: Private methods
@@ -73,6 +73,12 @@ class PageWithCustomIndicatorViewController: CustomPageViewController {
         let detailTextViewController = DetailTextViewController.viewController() as! DetailTextViewController
         detailTextViewController.item = item
         return detailTextViewController
+    }
+    
+    private func addSelectTap() {
+        let selectTap = UITapGestureRecognizer(target: self, action: #selector(self.showDetailText(_:)))
+        selectTap.allowedPressTypes = [ NSNumber(value: UIPressType.select.rawValue) ]
+        view.addGestureRecognizer(selectTap)
     }
 }
 

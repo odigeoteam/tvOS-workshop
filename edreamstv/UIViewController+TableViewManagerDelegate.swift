@@ -13,7 +13,11 @@ protocol ImageBackgroundView: class {
 
 extension TableViewManagerDelegate where Self: UIViewController {
     func didSelect(_ travelItem: TravelItem) {
-        //TODO: Step 4
+        let detailViewController = PageWithCustomIndicatorViewController(transitionStyle: .scroll, navigationOrientation: .vertical, options: nil)
+        detailViewController.item = travelItem
+        detailViewController.items = travelItem.detailItems()
+        
+        navigationController?.pushViewController(detailViewController, animated: true)
     }
     
     func didUpdateFocusIn(_ travelItem: TravelItem) {

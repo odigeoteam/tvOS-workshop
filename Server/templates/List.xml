@@ -46,7 +46,7 @@
                         <title id="headerTitle" style="headerTitle"></title>
                     </header>
                     <buttonLockup searchDocumentURL="/templates/Search.xml" class="leftElement">
-                        <badge class="buttonBadgeImg" src="/resources/images/icons/search.png" width="50" height="50" />
+                        <badge class="buttonBadgeImg" src="resource://search_icon" width="50" height="50" />
                     </buttonLockup>
                 </organizer>
             </row>

@@ -8,20 +8,21 @@
 import UIKit
 import AVKit
 
-//TODO: Step 4
-class DetailVideoViewController: UIViewController {
+class DetailVideoViewController: AVPlayerViewController {
     
     var url: URL?
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         guard let url = url else { return }
-        print(url.absoluteString)
-        
-        //TODO: Step 4
-    }
 
+        player = AVPlayer(url: url)
+        requiresLinearPlayback = true
+        videoGravity = AVLayerVideoGravityResizeAspectFill
+        player?.play()
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
