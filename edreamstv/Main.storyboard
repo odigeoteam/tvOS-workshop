@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="11542" systemVersion="15G1108" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="JWU-g8-v0g">
+    <device id="appleTV" orientation="landscape">
+        <adaptation id="light"/>
+    </device>
+    <dependencies>
+        <deployment identifier="tvOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="Z2t-dr-PaB">
+            <objects>
+                <navigationController id="JWU-g8-v0g" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Zs4-oc-K1Z">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="145"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="kpQ-tB-qqv"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NEV-JL-eJe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-474" y="-1258"/>
+        </scene>
+        <!--Search Results View Controller-->
+        <scene sceneID="PuJ-qy-CDH">
+            <objects>
+                <viewController storyboardIdentifier="SearchResultsViewController" id="5Mb-RU-d1K" customClass="SearchResultsViewController" customModule="edreamstv" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="oYB-Dw-XBz"/>
+                        <viewControllerLayoutGuide type="bottom" id="2b8-bV-FUa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="TYu-vg-Tn5">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="66" sectionHeaderHeight="66" sectionFooterHeight="66" translatesAutoresizingMaskIntoConstraints="NO" id="lFN-GG-0Ox">
+                                <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="lFN-GG-0Ox" secondAttribute="trailing" id="N8o-6X-Jwr"/>
+                            <constraint firstItem="2b8-bV-FUa" firstAttribute="top" secondItem="lFN-GG-0Ox" secondAttribute="bottom" id="Tsr-MA-Sbi"/>
+                            <constraint firstItem="lFN-GG-0Ox" firstAttribute="top" secondItem="oYB-Dw-XBz" secondAttribute="bottom" id="Zsb-gK-FhZ"/>
+                            <constraint firstItem="lFN-GG-0Ox" firstAttribute="leading" secondItem="TYu-vg-Tn5" secondAttribute="leading" id="hut-nw-erk"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="lFN-GG-0Ox" id="3xt-Ni-dmX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IvU-Yf-WTq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-486" y="406"/>
+        </scene>
+        <!--Home View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="edreamstv" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Vv8-FF-GwQ">
+                                <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="66" sectionHeaderHeight="66" sectionFooterHeight="66" translatesAutoresizingMaskIntoConstraints="NO" id="KYD-uT-Y3m">
+                                <rect key="frame" x="0.0" y="145" width="1920" height="935"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Vv8-FF-GwQ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-145" id="3cy-97-7pw"/>
+                            <constraint firstAttribute="trailing" secondItem="KYD-uT-Y3m" secondAttribute="trailing" id="84w-Xe-2ZU"/>
+                            <constraint firstAttribute="trailing" secondItem="Vv8-FF-GwQ" secondAttribute="trailing" id="I9v-m6-Wco"/>
+                            <constraint firstItem="Vv8-FF-GwQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="IyC-I1-5oM"/>
+                            <constraint firstItem="KYD-uT-Y3m" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="hlC-Ed-Iv0"/>
+                            <constraint firstItem="KYD-uT-Y3m" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ls8-V9-I8c"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Vv8-FF-GwQ" secondAttribute="bottom" id="wmT-fe-wcT"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="KYD-uT-Y3m" secondAttribute="bottom" id="zeA-vO-8hE"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="82T-Y4-lkY"/>
+                    <connections>
+                        <outlet property="imageBackgroundView" destination="Vv8-FF-GwQ" id="Dgw-0Q-GIQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1746" y="-1258"/>
+        </scene>
+        <!--Detail Text View Controller-->
+        <scene sceneID="ixc-h9-4Na">
+            <objects>
+                <viewController storyboardIdentifier="DetailTextViewController" id="aze-3Y-AD6" customClass="DetailTextViewController" customModule="edreamstv" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="QNM-mu-9aH"/>
+                        <viewControllerLayoutGuide type="bottom" id="BPr-oj-L0Y"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dak-W2-eTB">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8aZ-Cx-9Qd">
+                                <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                            </imageView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zZz-Jb-jOz">
+                                <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTE-cA-4s4">
+                                    <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <blurEffect style="dark"/>
+                            </visualEffectView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8BZ-1z-9Tz">
+                                <rect key="frame" x="110" y="60" width="1700" height="95"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="80"/>
+                                <color key="textColor" white="0.90000000000000002" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="skg-gn-JaM">
+                                <rect key="frame" x="90" y="235" width="1740" height="71"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="60"/>
+                                <color key="textColor" white="0.90000000000000002" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="BPr-oj-L0Y" firstAttribute="top" secondItem="8aZ-Cx-9Qd" secondAttribute="bottom" id="5pr-gE-4y7"/>
+                            <constraint firstItem="8aZ-Cx-9Qd" firstAttribute="leading" secondItem="dak-W2-eTB" secondAttribute="leading" id="7wd-bI-HIk"/>
+                            <constraint firstItem="zZz-Jb-jOz" firstAttribute="leading" secondItem="dak-W2-eTB" secondAttribute="leading" id="AJ0-NS-okJ"/>
+                            <constraint firstAttribute="trailing" secondItem="8aZ-Cx-9Qd" secondAttribute="trailing" id="BAu-hS-E4f"/>
+                            <constraint firstAttribute="trailing" secondItem="skg-gn-JaM" secondAttribute="trailing" constant="90" id="BwN-LH-4zt"/>
+                            <constraint firstItem="zZz-Jb-jOz" firstAttribute="top" secondItem="QNM-mu-9aH" secondAttribute="bottom" id="F7c-YZ-rWf"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="8BZ-1z-9Tz" secondAttribute="trailing" constant="90" id="IgZ-CE-pKQ"/>
+                            <constraint firstAttribute="trailing" secondItem="zZz-Jb-jOz" secondAttribute="trailing" id="Vdu-EO-riK"/>
+                            <constraint firstItem="skg-gn-JaM" firstAttribute="leading" secondItem="dak-W2-eTB" secondAttribute="leading" constant="90" id="c5a-tq-dSt"/>
+                            <constraint firstItem="8aZ-Cx-9Qd" firstAttribute="top" secondItem="QNM-mu-9aH" secondAttribute="bottom" id="eKo-ba-OGN"/>
+                            <constraint firstItem="8BZ-1z-9Tz" firstAttribute="leading" secondItem="dak-W2-eTB" secondAttribute="leadingMargin" constant="90" id="eyk-fh-vdg"/>
+                            <constraint firstItem="8BZ-1z-9Tz" firstAttribute="top" secondItem="QNM-mu-9aH" secondAttribute="bottom" constant="60" id="j0a-KE-9ar"/>
+                            <constraint firstItem="skg-gn-JaM" firstAttribute="top" secondItem="8BZ-1z-9Tz" secondAttribute="bottom" constant="80" id="kXm-7y-Enk"/>
+                            <constraint firstItem="BPr-oj-L0Y" firstAttribute="top" secondItem="zZz-Jb-jOz" secondAttribute="bottom" id="zcs-Ls-oLK"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="detailImageBackground" destination="8aZ-Cx-9Qd" id="VWf-pW-FxX"/>
+                        <outlet property="detailTextDescription" destination="skg-gn-JaM" id="jcC-WQ-ilM"/>
+                        <outlet property="detailTextTitle" destination="8BZ-1z-9Tz" id="5aB-tx-pty"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TzR-GD-Rmc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1746" y="406"/>
+        </scene>
+        <!--Detail Image View Controller-->
+        <scene sceneID="yXZ-QZ-HIw">
+            <objects>
+                <viewController storyboardIdentifier="DetailImageViewController" id="ctS-Gf-DO3" customClass="DetailImageViewController" customModule="edreamstv" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YDf-nJ-CrG"/>
+                        <viewControllerLayoutGuide type="bottom" id="s7V-gu-RGX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qaZ-2G-UtS">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VZ1-Dl-CG2">
+                                <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="s7V-gu-RGX" firstAttribute="top" secondItem="VZ1-Dl-CG2" secondAttribute="bottom" id="P4a-XN-9yr"/>
+                            <constraint firstItem="VZ1-Dl-CG2" firstAttribute="leading" secondItem="qaZ-2G-UtS" secondAttribute="leading" id="WkW-Ic-vC4"/>
+                            <constraint firstAttribute="trailing" secondItem="VZ1-Dl-CG2" secondAttribute="trailing" id="fHc-NT-C1H"/>
+                            <constraint firstItem="VZ1-Dl-CG2" firstAttribute="top" secondItem="YDf-nJ-CrG" secondAttribute="bottom" id="hVf-ja-ldN"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="detailImageView" destination="VZ1-Dl-CG2" id="gqZ-PO-eWI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Znm-nO-j6a" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3819" y="406"/>
+        </scene>
+    </scenes>
+</document>

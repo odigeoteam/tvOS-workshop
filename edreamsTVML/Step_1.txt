@@ -1,0 +1,15 @@
+------------------------------------------------------------------------------
+------------                                                     -------------
+------------                        STEP 1                       -------------
+------------                                                     -------------
+------------------------------------------------------------------------------
+
+Research time!!
+
+En este paso investigaremos los distingos templates que Apple nos facilita,
+lanzándolos en nuestro "Hello World".
+
+No olvides levantar un servidor dentro de la carpeta "Server". Puedes utilizar
+por ejemplo este comando: ruby -run -ehttpd . -p9001
+
+https://developer.apple.com/library/content/documentation/LanguagesUtilities/Conceptual/ATV_Template_Guide/TextboxTemplate.html#//apple_ref/doc/uid/TP40015064-CH2-SW8
